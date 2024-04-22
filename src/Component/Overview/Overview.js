@@ -26,7 +26,6 @@ const Overview = () => {
                 <div className="overview-item">
                     <div className="overview-left">
                         <div className="overview-form">
-                            <h4>Interested in FAIRFOX EON?</h4>
                             <Form />
                         </div>
                     </div>

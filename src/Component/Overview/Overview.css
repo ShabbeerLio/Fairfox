@@ -24,9 +24,13 @@
 }
 
 .overview-left .overview-form {
-  padding: 3rem 2rem;
+  padding: 2rem;
   border-radius: 8px;
   background-color: #fafafa;
+}
+.overview-left .overview-form h4{
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .overview-right {
@@ -119,24 +123,16 @@
   }
 }
 @media only screen and (max-width: 680px) {
-  .about-main {
-    gap: 0;
-    display: block;
+  .overview-item {
+    flex-wrap: wrap;
   }
 
-  .about-left,
-  .about-right {
+  .overview-left,
+  .overview-right {
     width: 100%;
   }
 
-  .about-right {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-main {
-    max-width: 520px;
+  .category-card {
+    height: 200px;
   }
 }

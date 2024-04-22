@@ -1,17 +1,76 @@
 .Highlights {
-    padding: 3rem 0rem;
+  /* padding: 3rem 0rem; */
   width: 100%;
 }
-.Highlights-main {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+/* .Highlights-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.highlights-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.highlights-left {
+  width: 50%;
+  padding: 3rem 1rem 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.highlights-left table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.highlights-left table tbody{
+  border-top: 1px solid #ddd;
+}
+
+.highlights-left th,
+.highlights-left td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.highlights-left td:first-child {
+  color:#283664 ;
+  border-right: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.highlights-left th {
+  background-color: #f4f4f4;
+}
+
+.highlights-right {
+  width: 50%;
+}
+.highlights-right img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 @media (min-width: 1200px) {
-  .Highlights-main {
+  /* .Highlights-main {
     max-width: 1140px;
+  } */
+}
+
+@media only screen and (max-width: 680px) {
+  .highlights-item {
+    flex-wrap: wrap;
+  }
+  .highlights-left {
+    width: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .highlights-right {
+    width: 100%;
   }
 }

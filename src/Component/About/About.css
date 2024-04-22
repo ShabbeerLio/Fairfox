@@ -26,7 +26,7 @@
 .about-title {
   text-align: center;
 }
-.about-title h2 {
+.about-title h1 {
   color: #212121;
   font-size: 36px;
   padding-bottom: 10px;
@@ -105,9 +105,8 @@
   }
 }
 @media only screen and (max-width: 680px) {
-  .about-main {
-    gap: 0;
-    display: block;
+  .about-items {
+    flex-wrap: wrap;
   }
 
   .about-left,
@@ -124,5 +123,10 @@
 
   .about-main {
     max-width: 520px;
+  }
+
+  .about-button a{
+    width: 100%;
+    text-align: center;
   }
 }

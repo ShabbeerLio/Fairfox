@@ -114,8 +114,8 @@
 }
 
 .nav-button {
-  border: 2px solid #283664;
-  margin-right: 20px;
+  /* border: 2px solid #283664; */
+  /* margin-right: 20px; */
   padding: 10px;
 }
 
@@ -170,7 +170,7 @@
 }
 .call-button p a svg{
   font-size: 18px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 /* .call-button p:hover {
     background-color: #5277bc;
@@ -313,6 +313,11 @@
   }
 }
 @media only screen and (max-width: 540px) {
+
+    .company-logo img {
+        max-height: 80px;
+      }
+
   .company-logo img {
     padding: 15px 0px;
   }
