@@ -1,0 +1,128 @@
+.banner-heading {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  top: 0;
+  align-items: center;
+  /* height: 90%; */
+  width: 100%;
+  justify-content: center;
+}
+.banner-heading h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #2077ba91;
+  padding: 20px 50px;
+  visibility: visible;
+  animation-delay: 0.4s;
+  font-size: 54px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.banner-image:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  left: 0;
+  display: inline-block;
+  opacity: 0.9;
+  background-image: linear-gradient(0deg, #000 0%, rgba(255, 255, 255, 0) 100%);
+}
+.banner-image {
+  position: relative;
+}
+
+.banner img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+.banner {
+  margin-top: 80px;
+}
+
+.banner-bottom {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.banner-items {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.banner-card {
+  display: flex;
+  align-items: center;
+  /* text-align: center; */
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.banner-card-detail {
+  width: 80%;
+}
+.banner-card svg {
+  font-size: 40px;
+  color: goldenrod;
+  margin-right: 10px;
+}
+.banner-card h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.banner-card p {
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .banner-bottom {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .banner img {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .banner-heading {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    top: 0;
+    align-items: center;
+    height: 65%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner-heading h1 {
+    font-size: 30px;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 45vh;
+    object-fit: contain;
+  }
+}
