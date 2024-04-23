@@ -7,6 +7,7 @@ const Walkthrough = () => {
     return (
         <div className='Walkthrough'>
             <div className='Walkthrough-main'>
+                <h2>Construction Update</h2>
                 <div className="walkthrough-item">
                     <div className="walkthrough-left">
                         <video controls>

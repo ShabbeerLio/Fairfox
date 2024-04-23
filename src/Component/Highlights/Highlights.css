@@ -1,14 +1,6 @@
 .Highlights {
-  /* padding: 3rem 0rem; */
   width: 100%;
 }
-/* .Highlights-main {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */
 
 .highlights-item {
   display: flex;
@@ -22,6 +14,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+.highlights-left h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .highlights-left table {
   width: 100%;
@@ -57,9 +54,6 @@
 }
 
 @media (min-width: 1200px) {
-  /* .Highlights-main {
-    max-width: 1140px;
-  } */
 }
 
 @media only screen and (max-width: 680px) {

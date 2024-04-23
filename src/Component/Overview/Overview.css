@@ -15,7 +15,6 @@
 .overview-item {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
 }
 
 .overview-left {
@@ -53,10 +52,7 @@
   padding-bottom: 10px;
 }
 
-/* .overview-category {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-} */
+
 .overview-category img {
   width: 100%;
   border-radius: 5px;

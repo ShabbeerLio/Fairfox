@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Highlights.css"
-import high from "../../Assets/Highlights/highlights2.jpg"
+import high from "../../Assets/Highlights/eon1.jpg"
 
 const Highlights = () => {
 

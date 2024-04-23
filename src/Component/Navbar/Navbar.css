@@ -135,13 +135,13 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: black;
+  color: #000; /* Default text color */
+  border-bottom: none; /* No underline by default */
 }
 
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  color: #283664;
-  border-bottom: 2px solid #283664;
+.navbar-light .navbar-nav .nav-link.active{
+  color: #283664; /* Blue color */
+  border-bottom: 2px solid #283664; /* Underline */
 }
 
 .call-button p {

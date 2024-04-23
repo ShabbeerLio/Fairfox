@@ -4,6 +4,8 @@ import Overview from '../../Component/Overview/Overview'
 import About from '../../Component/About/About'
 import Highlights from '../../Component/Highlights/Highlights'
 import Walkthrough from '../../Component/Walkthrough/Walkthrough'
+import Enquery from '../../Component/Enquery/Enquery'
+import HomePlan from '../../Component/HomePlan/HomePlan'
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
            <Overview/>
            <Highlights/>
            <Walkthrough/>
+           <HomePlan/>
+           <Enquery/>
         </div>
     )
 }

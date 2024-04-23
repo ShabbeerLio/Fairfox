@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import Logo from "../../Assets/logo.webp"
 import { Link } from 'react-router-dom';
-import { IoLogoWhatsapp, IoNotificationsOutline, IoCallOutline } from "react-icons/io5";
+import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Navbar = (props) => {
+
+    const [activeLink, setActiveLink] = useState('/');
+
+    const handleLinkClick = (path) => {
+        setActiveLink(path);
+        closeMenu();
+    };
 
     const [isInputVisible, setInputVisible] = useState(false);
     const [isCollapseOpen, setIsCollapseOpen] = useState(false);
@@ -49,7 +56,11 @@ const Navbar = (props) => {
                         <div className="container-fluid">
                             <div className="company-logo">
                                 <div className="company-logo-box">
-                                    <Link className="navBar-logo" to="/">
+                                    <Link
+                                        className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
+                                        to="/"
+                                        onClick={() => handleLinkClick('/')}
+                                    >
                                         <img src={Logo} alt="" />
                                     </Link>
                                 </div>
@@ -71,31 +82,61 @@ const Navbar = (props) => {
                             <div className="navbar-items">
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ml-auto">
+                                        <Link
+                                            className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
+                                            to="/"
+                                            onClick={() => handleLinkClick('/')}
+                                        >
+                                            Home
+                                        </Link>
                                         <li className="nav-item">
-                                            <Link className="nav-link active" to="/" onClick={closeMenu}>Home</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/gallery' ? 'active' : ''}`}
+                                                to="/gallery"
+                                                onClick={() => handleLinkClick('/gallery')}
+                                            >
+                                                Gallery
+                                            </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/gallery" onClick={closeMenu}  >Gallery</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/price-list' ? 'active' : ''}`}
+                                                to="/price-list"
+                                                onClick={() => handleLinkClick('/price-list')}
+                                            >Price List</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/gallery" onClick={closeMenu}  >Price List</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/master-plan' ? 'active' : ''}`}
+                                                to="/master-plan"
+                                                onClick={() => handleLinkClick('/master-plan')}
+                                            >Master Plan</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/gallery" onClick={closeMenu}  >Master Plan</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/floor-plan' ? 'active' : ''}`}
+                                                to="/floor-plan"
+                                                onClick={() => handleLinkClick('/floor-plan')}
+                                            >Floor Plan</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/floor-plan" onClick={closeMenu} >Floor Plan</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/location' ? 'active' : ''}`}
+                                                to="/location"
+                                                onClick={() => handleLinkClick('/location')}
+                                            >Location</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" to="/location" onClick={closeMenu} >Location</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link className="nav-link" to="/site-visit" onClick={closeMenu} >Book A Site Visit</Link>
+                                            <Link
+                                                className={`nav-link ${activeLink === '/site-visit' ? 'active' : ''}`}
+                                                to="/site-visit"
+                                                onClick={() => handleLinkClick('/site-visit')}
+                                            >Book A Site Visit</Link>
                                         </li>
                                         <div className="nav-action">
                                             <div className="call-button" onClick={formIsOpen}>
                                                 <p>
-                                                    <a href='tel: +919910109041'>
+                                                    <Link to='tel: +919821123006'>
                                                         <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
                                                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                                                                 <path strokeDasharray="64" strokeDashoffset="64" d="M8 3C8.5 3 10.5 7.5 10.5 8C10.5 9 9 10 8.5 11C8 12 9 13 10 14C10.3943 14.3943 12 16 13 15.5C14 15 15 13.5 16 13.5C16.5 13.5 21 15.5 21 16C21 18 19.5 19.5 18 20C16.5 20.5 15.5 20.5 13.5 20C11.5 19.5 10 19 7.5 16.5C5 14 4.5 12.5 4 10.5C3.5 8.5 3.5 7.5 4 6C4.5 4.5 6 3 8 3Z">
@@ -116,7 +157,7 @@ const Navbar = (props) => {
                                                                 </path>
                                                             </g>
                                                         </svg>
-                                                        9910109041</a>
+                                                        9821123006</Link>
                                                 </p>
                                             </div>
                                         </div>
@@ -125,9 +166,9 @@ const Navbar = (props) => {
                             </div>
                             <div className="fix-icon">
                                 <span className='shine'></span>
-                                <a href="https://wa.me/+919910109041">
+                                <Link to="https://wa.me/+919821123006">
                                     <IoLogoWhatsapp />
-                                </a>
+                                </Link>
                             </div>
                             {/* {formopen && (
                                 <>
