@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Table.css"
 
-const Table = ({ item }) => {
+const Table = ({ item, index }) => {
     return (
-        <div className="list-table">
+        <div className="list-table" key={index}>
             <h5>{item.title}</h5>
             <table>
                 <thead>

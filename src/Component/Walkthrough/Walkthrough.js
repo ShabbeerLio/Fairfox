@@ -10,9 +10,7 @@ const Walkthrough = () => {
                 <h2>Construction Update</h2>
                 <div className="walkthrough-item">
                     <div className="walkthrough-left">
-                        <video controls>
-                            <source src={walk} type="video/mp4" />
-                        </video>
+                        <iframe src="https://www.youtube.com/embed/Qk15ZF7sMeI" title="FAIRFOX EON NOIDA Construction Update April 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div className="walkthrough-right">
                         <div className="walkthrough-form">

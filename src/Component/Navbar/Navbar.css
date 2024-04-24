@@ -2,10 +2,10 @@
   width: 100%;
   background-color: white;
   position: fixed;
-    top: 0;
-    z-index: 9999;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  top: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .nav-menu {
@@ -139,7 +139,7 @@
   border-bottom: none; /* No underline by default */
 }
 
-.navbar-light .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link.active {
   color: #283664; /* Blue color */
   border-bottom: 2px solid #283664; /* Underline */
 }
@@ -160,7 +160,7 @@
   cursor: pointer;
   transition: all 0.3s;
   background-color: #283664;
-  border-radius:5px;
+  border-radius: 5px;
   margin-left: 20px;
 }
 
@@ -168,7 +168,7 @@
   text-decoration: none;
   color: white;
 }
-.call-button p a svg{
+.call-button p a svg {
   font-size: 18px;
   margin-right: 10px;
 }
@@ -204,7 +204,7 @@
 .fix-icon {
   position: fixed;
   bottom: 2%;
-  left: 2%;
+  right: 2%;
 }
 
 .fix-icon a {
@@ -224,7 +224,7 @@
 .fix-icon .shine {
   position: absolute;
   bottom: 15%;
-  left: 0%;
+  right: 0%;
   content: "";
   height: 50px;
   width: 50px;
@@ -237,6 +237,62 @@
 .fix-icon a svg {
   font-size: 25px;
   animation: whatsapp 2s infinite;
+}
+
+.fix-icon-call {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+}
+.fix-icon-call a {
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb000;
+  margin-bottom: 8px;
+  z-index: 1;
+}
+.fix-icon-call .shine {
+  position: absolute;
+  bottom: 15%;
+  right: 0%;
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffb000;
+  animation: shine 2s infinite;
+  z-index: -1;
+}
+.fix-icon-call a svg {
+  font-size: 25px;
+}
+
+.fix-icon-enquery {
+  position: fixed;
+  bottom: 50%;
+  right: -4%;
+  rotate: -90deg;
+}
+
+.fix-icon-enquery p {
+  background-color: #283664;
+  padding: 12px 24px;
+  color: white;
+  border-radius: 8px;
+  margin: 0;
+  cursor: pointer;
+  text-align: right;
+  transition: 0.3s ease-in-out;
+}
+.fix-icon-enquery p:hover {
+  background-color: #ffb000;
+  color: black;
 }
 
 @keyframes whatsapp {
@@ -313,28 +369,12 @@
   }
 }
 @media only screen and (max-width: 540px) {
-
-    .company-logo img {
-        max-height: 80px;
-      }
+  .company-logo img {
+    max-height: 80px;
+  }
 
   .company-logo img {
     padding: 15px 0px;
-  }
-  .fix-icon {
-    right: 5%;
-  }
-  .fix-icon a {
-    height: 70px;
-    width: 70px;
-  }
-  .fix-icon .shine {
-    height: 70px;
-    width: 70px;
-    bottom: 10%;
-  }
-  .fix-icon a svg {
-    font-size: 30px;
   }
   .fix-icon-enquery {
     right: -15%;

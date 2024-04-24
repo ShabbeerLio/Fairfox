@@ -26,8 +26,9 @@
 .walkthrough-left {
   width: 70%;
 }
-.walkthrough-left video {
+.walkthrough-left iframe {
   width: 100%;
+  height: 100%;
 }
 .walkthrough-right {
   width: 30%;

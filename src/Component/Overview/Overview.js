@@ -2,8 +2,11 @@ import React from 'react'
 import "./Overview.css"
 import Form from '../Form/Form'
 import hall from "../../Assets/CAtegory/hall.jpg"
+import food from "../../Assets/CAtegory/overview-food.jpg"
 import pool from "../../Assets/CAtegory/Swimming Pool.jpg"
-import Shopping from "../../Assets/CAtegory/Posh Shopping.jpg"
+import walking from "../../Assets/CAtegory/category-walking.jpg"
+import Shopping from "../../Assets/CAtegory/poseshoping.jpg"
+import spot from "../../Assets/CAtegory/recreational.jpg"
 import ReactOwlCarousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -34,8 +37,9 @@ const Overview = () => {
                             <h3>Overview</h3>
                         </div>
                         <div className="overview-detail">
-                            <p>Fairfox EON is the best IT-ITES Commercial project in Noida. Located strategically at Sector 140A, Noida Expressway, Fairfox EON is a premium development with amenities like parking, power backup, landscaped gardens, rain water harvesting, 24×7 security and many more. Fairfox EON Eye Of Noida offers premium Office Spaces along with high street retail spaces with restraints, food court, brand showrooms. Fairfox eon offers lockable office space at very attractive rate.</p>
-                            <p>Introducing Fairfox KUBES by Fairfox at one of the most preferred locations of Sector-140A, Noida. Fairfox Kubes project is a 5-seater lockable Office Space that is determined as the most efficient and budget friendly business center. Fairfox Kubes project is equipped with modern amenities.</p>
+                            <p>Our meticulously crafted commercial shops and office spaces redefine the standard of modern business environments, offering a seamless blend of functionality, luxury, and convenience. From the moment you enter through the grand vehicular entrance and exit, you are greeted by a meticulously planned road-to-ramp system that ensures smooth traffic flow. As you navigate through the shaded avenues and green boulevards, you'll encounter the central inner grove with a mound, providing a serene retreat amidst the bustling commercial district.</p>
+                            <p>Our shopping boulevard and pedestrian shopping plaza offer a vibrant shopping experience, complemented by F&B kiosks and food terraces that cater to every culinary craving. The triple-height entrance lobby, adorned with project signage, sets the stage for a grand arrival, while pedestrian crossovers and skywalks connect you seamlessly to multifunctional spaces and amenities such as the kid's play area and sand pit.</p>
+                            <p>Immerse yourself in cultural performances at the amphitheater or relax on the performance deck overlooking the landscape terraces and tree bosque seating areas. With features like vehicular and pedestrian boulevards, sculptural staircases for basement connections, FAIRFOX EON ensures that every aspect of your commercial experience is thoughtfully curated for success and enjoyment. Welcome to a new era of commercial sophistication at FAIRFOX EON, where every detail is designed to elevate your business and lifestyle.</p>
                         </div>
                         <div className="overview-category">
                             <ReactOwlCarousel
@@ -46,26 +50,22 @@ const Overview = () => {
                             >
                                 <div className="category-card">
                                     <img src={hall} alt="" />
-                                    <p>Community Hall</p>
+                                    <p>Triple-height entrance lobby</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={pool} alt="" />
-                                    <p>Swimming Pool</p>
+                                    <img src={food} alt="" />
+                                    <p>Food Court</p>
                                 </div>
                                 <div className="category-card">
                                     <img src={Shopping} alt="" />
                                     <p>Posh Shopping</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={pool} alt="" />
-                                    <p>Community Library</p>
-                                </div>
-                                <div className="category-card">
-                                    <img src={hall} alt="" />
+                                    <img src={walking} alt="" />
                                     <p>Walking Track</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={Shopping} alt="" />
+                                    <img src={spot} alt="" />
                                     <p>Recreational Spot</p>
                                 </div>
                             </ReactOwlCarousel>

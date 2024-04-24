@@ -5,27 +5,35 @@ import { Link } from 'react-router-dom'
 import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Footer = (props) => {
+
+    const toTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+    }
     return (
         <div className='Footer'>
             <div className='Footer-main'>
                 <div className="footer-box">
                     <div className="footer-item">
                         <img src={footerimg} alt="" />
+                        <p>Rera No : UPRERAPRJ750395</p>
                     </div>
                     <div className="footer-item">
                         {/* <h3>Useful Links</h3> */}
                         <ul>
                             <li>
-                                <Link to="/brochure">Brochure</Link>
+                                <Link to="/brochure" onClick={toTop}>Brochure</Link>
                             </li>
                             <li>
-                                <Link to="/floor-plan">Floor Plan</Link>
+                                <Link to="/floor-plan" onClick={toTop}>Floor Plan</Link>
                             </li>
                             <li>
-                                <Link to="/price-list">Price List</Link>
+                                <Link to="/price-list" onClick={toTop}>Price List</Link>
                             </li>
                             <li>
-                                <Link to="/blog">Blog</Link>
+                                <Link to="/blog" onClick={toTop}>Blog</Link>
                             </li>
                         </ul>
                     </div>
@@ -57,20 +65,26 @@ const Footer = (props) => {
                                     9821123006
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link to="https://wa.me/+919821123006">
                                     <IoLogoWhatsapp />
                                     9821123006
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
+                    </div>
+                    <div className="footer-item">
+                        <p>Plot No. 01, Block A, Sector 140A, Noida, Uttar Pradesh 201301</p>
+                    </div>
+                    <div className="footer-item">
+                        <p>info@fairfoxeonoida.com</p>
                     </div>
                 </div>
             </div>
             <div className="footer-down">
                 <div className="footer-copyright">
-                    <p>©2023. Fairfox EON All Rights Reserved.</p>
-                    <p>Designed by :<Link href="https://globalitsources.com/">&#160; Global IT Sources</Link></p>
+                    <p>©2024. Fairfox EON Noida All Rights Reserved. Disclaimer: This website is intended for informational purposes only and should not be considered the official site.</p>
+                    {/* <p>Designed by :<Link href="https://globalitsources.com/">&#160; Global IT Sources</Link></p> */}
                 </div>
             </div>
         </div>

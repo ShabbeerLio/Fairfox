@@ -2,6 +2,7 @@
   padding: 3rem 0;
   width: 100%;
   margin-top: 80px;
+  background-color: #f1f1f1;
 }
 
 .Gallery-main {
@@ -95,5 +96,27 @@
 @media (min-width: 1200px) {
   .Gallery-main {
     max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+
+  .gallery-box{
+    flex-wrap: wrap;
+  }
+
+  .gallery-items1 {
+    width: 100%;
+}
+
+.gallery-items2 {
+  width: 100%;
+}
+
+  .gallery-box2 {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
