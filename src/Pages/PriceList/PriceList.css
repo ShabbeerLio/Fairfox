@@ -48,4 +48,8 @@
   .PriceList-main {
     max-width: 1140px;
   }
+
+  .pricelist-table{
+    overflow: auto;
+  }
 }

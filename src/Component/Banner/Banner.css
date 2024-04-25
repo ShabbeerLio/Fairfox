@@ -113,22 +113,16 @@
 }
 
 @media only screen and (max-width: 680px) {
-
   .banner-items {
     position: static;
     padding-top: 2rem;
-}
+  }
 
-.banner-card {
-  display: flex;
-  align-items: center;
-  /* text-align: center; */
-  border: 1px solid rgb(94, 94, 94);
-  border-radius: 5px;
-  padding: 1rem;
-  color: white;
-  background-color: #283664 ;
-}
+  .banner-card {
+    color: white;
+    background-color: #283664;
+    padding: 20px 10px;
+  }
   .banner-heading {
     position: absolute;
     z-index: 999;
@@ -163,5 +157,5 @@
 
   .banner-card-detail {
     width: 100%;
-}
+  }
 }

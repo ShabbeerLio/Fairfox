@@ -74,7 +74,7 @@ const Footer = (props) => {
                         </ul>
                     </div>
                     <div className="footer-item">
-                        <p>Plot No. 01, Block A, Sector 140A, Noida, Uttar Pradesh 201301</p>
+                        <p>Block A, Plot No. 01, Sector 140A, Noida, Uttar Pradesh 201301</p>
                     </div>
                     <div className="footer-item">
                         <p>info@fairfoxeonoida.com</p>
