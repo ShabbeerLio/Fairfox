@@ -4,8 +4,6 @@ import GalleryData from './GalleryData'
 import { IoMdClose } from "react-icons/io";
 import { useLocation } from 'react-router-dom';
 
-console.log(GalleryData[0].cover)
-
 const Gallery = (props) => {
 
     const [model, setModel] = useState(false);
@@ -80,21 +78,21 @@ const Gallery = (props) => {
                     </div>
                     <div className={model ? "model open" : "model"}>
                         <IoMdClose onClick={closeModel} />
-                        <img src={imgview} alt="" />
+                        <img src={imgview} alt="eon noida expressway" />
                     </div>
                     <div className="gallery-box">
                         <div className="gallery-items1">
-                            <img src={GalleryData[0].cover} alt={GalleryData[0].alt} onClick={() => getImg(GalleryData[0].cover)} />
+                            <img src={GalleryData[0].cover} alt={GalleryData[0].alttag} onClick={() => getImg(GalleryData[0].cover)} />
                         </div>
                         <div className="gallery-items2">
                             {GalleryData.slice(1, 5).map((item) => (
-                                <img key={item.id} src={item.cover} alt={item.alt} onClick={() => getImg(item.cover)} />
+                                <img key={item.id} src={item.cover} alt={item.alttag} onClick={() => getImg(item.cover)} />
                             ))}
                         </div>
                     </div>
                     <div className="gallery-box2">
                         {GalleryData.slice(1, 5).map((item) => (
-                            <img key={item.id} src={item.cover} alt={item.alt} onClick={() => getImg(item.cover)} />
+                            <img key={item.id} src={item.cover} alt={item.alttag} onClick={() => getImg(item.cover)} />
                         ))}
                     </div>
                 </div>

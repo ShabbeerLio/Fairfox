@@ -24,12 +24,9 @@ const Navbar = (props) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const handleLinkClick = (path) => {
-        setActiveLink(path);
-        closeMenu();
-    };
 
-    const closeMenu = () => {
+
+    const closeMenu = (path) => {
         window.scrollTo({
             top: 0,
             behavior: 'auto'
@@ -43,6 +40,11 @@ const Navbar = (props) => {
             icon.classList.toggle('active');
         });
         setIsCollapseOpen(!isCollapseOpen);
+        handleLinkClick(path);
+    };
+
+    const handleLinkClick = (path) => {
+        setActiveLink(path);
     };
 
     const formIsOpen = () => {
@@ -63,7 +65,7 @@ const Navbar = (props) => {
                             <div className="company-logo">
                                 <div className="company-logo-box">
                                     <Link
-                                        className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
+                                        className={`nav-link ${activeLink === '/' ? 'active' : ''}`} 
                                         to="/"
                                         onClick={() => handleLinkClick('/')}
                                     >
@@ -92,7 +94,7 @@ const Navbar = (props) => {
                                             <Link
                                                 className={`nav-link ${activeLink === '/' ? 'active' : ''}`}
                                                 to="/"
-                                                onClick={() => handleLinkClick('/')}
+                                                onClick={() => closeMenu('/')}
                                             >
                                                 Home
                                             </Link>
@@ -101,7 +103,7 @@ const Navbar = (props) => {
                                             <Link
                                                 className={`nav-link ${activeLink === '/gallery' ? 'active' : ''}`}
                                                 to="/gallery"
-                                                onClick={() => handleLinkClick('/gallery')}
+                                                onClick={() => closeMenu('/gallery')}
                                             >
                                                 Gallery
                                             </Link>
@@ -110,35 +112,35 @@ const Navbar = (props) => {
                                             <Link
                                                 className={`nav-link ${activeLink === '/price-list' ? 'active' : ''}`}
                                                 to="/price-list"
-                                                onClick={() => handleLinkClick('/price-list')}
+                                                onClick={() => closeMenu('/price-list')}
                                             >Price List</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/master-plan' ? 'active' : ''}`}
                                                 to="/master-plan"
-                                                onClick={() => handleLinkClick('/master-plan')}
+                                                onClick={() => closeMenu('/master-plan')}
                                             >Master Plan</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/floor-plan' ? 'active' : ''}`}
                                                 to="/floor-plan"
-                                                onClick={() => handleLinkClick('/floor-plan')}
+                                                onClick={() => closeMenu('/floor-plan')}
                                             >Floor Plan</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/location' ? 'active' : ''}`}
                                                 to="/location"
-                                                onClick={() => handleLinkClick('/location')}
+                                                onClick={() => closeMenu('/location')}
                                             >Location</Link>
                                         </li>
                                         <li className="nav-item">
                                             <Link
                                                 className={`nav-link ${activeLink === '/site-visit' ? 'active' : ''}`}
                                                 to="/site-visit"
-                                                onClick={() => handleLinkClick('/site-visit')}
+                                                onClick={() => closeMenu('/site-visit')}
                                             >Book A Site Visit</Link>
                                         </li>
                                         <div className="nav-action">

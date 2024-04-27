@@ -12,7 +12,7 @@ const Banner = () => {
                 <div className="banner-heading">
                 </div>
                 <div className="banner-image">
-                    <img src="https://static.360realtors.com/properties/photos/5903/mini/Eon.jpg" alt="Fairfox EON Noida" />
+                    <img src="https://static.360realtors.com/properties/photos/5903/mini/Eon.jpg" alt="fairfox eon" />
                 </div>
                 <div className="banner-bottom">
                     <div className="banner-items">

@@ -33,4 +33,7 @@
     .sitevisit-item{
         width: 100%;
     }
+    .sitevisit-box{
+      padding: 5rem 1rem;
+  }
 }

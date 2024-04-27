@@ -65,12 +65,6 @@ const Footer = (props) => {
                                     9821123006
                                 </Link>
                             </li>
-                            {/* <li>
-                                <Link to="https://wa.me/+919821123006">
-                                    <IoLogoWhatsapp />
-                                    9821123006
-                                </Link>
-                            </li> */}
                         </ul>
                     </div>
                     <div className="footer-item">

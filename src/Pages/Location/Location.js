@@ -60,7 +60,7 @@ const Location = (props) => {
                 <h1>LOCATION</h1>
             </div>
             <div className="location-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14023.4831016781!2d77.4180515!3d28.5135354!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1714039416190!5m2!1sen!2sin"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7011.7415508390495!2d77.40903927770997!3d28.513535400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce95a41d6ebb5%3A0xd13ec53e26f8362c!2sFairfox%20EON%20Noida!5e0!3m2!1sen!2sin!4v1714205926412!5m2!1sen!2sin"></iframe>
             </div>
         </div>
     )

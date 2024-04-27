@@ -12,7 +12,7 @@
   margin-left: auto;
 }
 
-.about-items{
+.about-items {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -52,7 +52,7 @@
   margin: 0;
   padding-bottom: 10px;
 }
-.about-title h4 span{
+.about-title h4 span {
   color: #283664;
   font-size: 35px;
   font-weight: bold;
@@ -92,23 +92,73 @@
   margin-top: 20px;
 }
 
-.about-button a p {
+/* .about-button a p {
   margin: 0;
   font-size: 20px;
   padding: 15px 25px;
   border-radius: 8px;
   background-color: #283664;
   transition: .3s ease-in-out;
-}
-.about-button a p:hover {
+} */
+/* .about-button a p:hover {
   background-color: #ffb000;
   color: black;
-}
+} */
 
 .about-button a {
   text-decoration: none;
   color: white;
   font-size: 14px;
+}
+
+.about-button a {
+  padding: 10px;
+  background: #283664;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.about-button a p {
+  z-index: 1;
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.about-button a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(180deg, #ffb000, #ffb000);
+  height: 50%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about-button a::after {
+  content: "";
+  position: absolute;
+  background: #283664;
+  inset: 5px;
+  border-radius: 8px;
+}
+.about-button a:hover:before {
+  background-image: linear-gradient(180deg, gold, gold);
+  animation: rotBGimg 3.5s linear infinite;
 }
 
 @media (min-width: 1200px) {
@@ -147,7 +197,7 @@
     max-width: 520px;
   }
 
-  .about-button a{
+  .about-button a {
     width: 100%;
     text-align: center;
   }

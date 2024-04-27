@@ -20,7 +20,7 @@ const Highlights = () => {
             <div className='Highlights-main'>
                 <div className="highlights-item">
                     <div className="highlights-right">
-                        <img src={high} alt="" />
+                        <img src={high} alt="eon eye of noida" />
                     </div>
                     <div className="highlights-left">
                         <h2>Project Highlights</h2>

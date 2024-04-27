@@ -9,7 +9,7 @@ const Enquery = () => {
             <div className='Enquery-main'>
                 <div className="enquery-box">
                     <div className="enquery-left">
-                        <img src={formimg} alt="" />
+                        <img src={formimg} alt="fairfox noida" />
 
                     </div>
                     <div className="enquery-right">

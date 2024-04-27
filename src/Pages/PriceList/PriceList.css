@@ -48,8 +48,10 @@
   .PriceList-main {
     max-width: 1140px;
   }
+}
 
-  .pricelist-table{
+@media only screen and (max-width: 680px) {
+  .pricelist-table {
     overflow: auto;
   }
 }

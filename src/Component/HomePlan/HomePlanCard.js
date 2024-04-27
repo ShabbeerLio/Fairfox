@@ -16,7 +16,7 @@ const HomePlanCard = ({ home }) => {
                         </div>
                         <div className="homeplan-right">
                             <div className="homeplan-image">
-                                <img src={home.cover} alt="" />
+                                <img src={home.cover} alt={home.alttag} />
                             </div>
                         </div>
                     </>
@@ -24,7 +24,7 @@ const HomePlanCard = ({ home }) => {
                     <>
                         <div className="homeplan-right">
                             <div className="homeplan-image">
-                                <img src={home.cover} alt="" />
+                                <img src={home.cover} alt={home.alttag} />
                             </div>
                         </div>
                         <div className="homeplan-left">

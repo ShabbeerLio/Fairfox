@@ -49,23 +49,23 @@ const Overview = () => {
                                 responsive={responsiveOptions}
                             >
                                 <div className="category-card">
-                                    <img src={hall} alt="" />
+                                    <img src={hall} alt="eon noida" />
                                     <p>Triple-height entrance lobby</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={food} alt="" />
+                                    <img src={food} alt="eye of noida" />
                                     <p>Food Court</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={Shopping} alt="" />
+                                    <img src={Shopping} alt="eon eye of noida" />
                                     <p>Posh Shopping</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={walking} alt="" />
+                                    <img src={walking} alt="fairfox eon commercial park noida" />
                                     <p>Walking Track</p>
                                 </div>
                                 <div className="category-card">
-                                    <img src={spot} alt="" />
+                                    <img src={spot} alt="eon project noida" />
                                     <p>Recreational Spot</p>
                                 </div>
                             </ReactOwlCarousel>
