@@ -25,7 +25,7 @@ const HomePlanData = [
         title: "Central Inner Grove and Mound",
         desc: "Escape the hustle and bustle of the corporate world and immerse yourself in the tranquility of our central inner grove and mound. This serene oasis provides a refreshing retreat for employees and visitors alike, offering a peaceful sanctuary amidst lush greenery and calming water features. Foster creativity, relaxation, and well-being in a natural environment that rejuvenates the mind and soul.",
         cover: require("../../Assets/CAtegory/apot.jpg"),
-        alttag:"eon noida sector 140"
+        alttag:"EON Sector 146"
     }
 ]
 export default HomePlanData;

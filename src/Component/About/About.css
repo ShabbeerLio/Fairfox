@@ -20,7 +20,7 @@
 }
 
 .about-left {
-  width: 60%;
+  width: 50%;
 }
 
 .about-title {
@@ -75,7 +75,7 @@
 }
 
 .about-right {
-  width: 40%;
+  width: 50%;
 }
 
 .about-right img {
@@ -184,6 +184,8 @@
 
   .about-title h4 {
     margin-top: 20px;
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .about-right {

@@ -18,22 +18,22 @@ const Footer = (props) => {
                 <div className="footer-box">
                     <div className="footer-item">
                         <img src={footerimg} alt="" />
-                        <p>Rera No : UPRERAPRJ750395</p>
+                        <p>Rera No : UPRERAPRJ211016</p>
                     </div>
                     <div className="footer-item">
                         {/* <h3>Useful Links</h3> */}
                         <ul>
                             <li>
-                                <Link to="/brochure" onClick={toTop}>Brochure</Link>
-                            </li>
-                            <li>
-                                <Link to="/floor-plan" onClick={toTop}>Floor Plan</Link>
+                                <Link to="/gallery" onClick={toTop}>Gallery</Link>
                             </li>
                             <li>
                                 <Link to="/price-list" onClick={toTop}>Price List</Link>
                             </li>
                             <li>
-                                <Link to="/blog" onClick={toTop}>Blog</Link>
+                                <Link to="/floor-plan" onClick={toTop}>Floor Plan</Link>
+                            </li>
+                            <li>
+                                <Link to="/site-visit" onClick={toTop}>Book a Site Visit</Link>
                             </li>
                         </ul>
                     </div>

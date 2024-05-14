@@ -20,7 +20,7 @@ const Banner = () => {
                             <FaBriefcase />
                             <div className="banner-card-detail">
                                 <h4>Office Space</h4>
-                                <p>Lockable Office Space</p>
+                                <p>Lockable Office Space </p>
                             </div>
                         </div>
                         <div className="banner-card">
@@ -40,8 +40,8 @@ const Banner = () => {
                         <div className="banner-card">
                             <FaBed />
                             <div className="banner-card-detail">
-                                <h4>Studio</h4>
-                                <p>Studio Apartment</p>
+                                <h4>Suite </h4>
+                                <p>Office Suite</p>
                             </div>
                         </div>
                     </div>

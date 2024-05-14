@@ -1,3 +1,4 @@
+
 .banner-heading {
   position: absolute;
   z-index: 999;
@@ -33,12 +34,24 @@
 }
 .banner-image {
   position: relative;
+  overflow: hidden;
 }
 
 .banner img {
   height: 90vh;
   width: 100%;
   object-fit: cover;
+  filter: brightness(70%);
+}
+
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.banner-image img{
+  animation: breathe 8s infinite alternate; /* Adjust duration and other properties as needed */
 }
 .banner {
   margin-top: 80px;
