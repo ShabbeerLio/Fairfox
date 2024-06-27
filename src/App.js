@@ -10,28 +10,29 @@ import PriceList from "./Pages/PriceList/PriceList";
 import MasterPlan from "./Pages/MasterPlan/MasterPlan";
 import FloorPlan from "./Pages/FloorPlan/FloorPlan";
 import SiteVisit from "./Pages/SiteVisit/SiteVisit";
+import Disclaimer from "./Pages/Disclaimer/Disclaimer";
 
 function App() {
 
   // remove inspect and copy element
-   useEffect(() => {
-    const handleRightClick = (e) => {
-      e.preventDefault();
-    };
+  //  useEffect(() => {
+  //   const handleRightClick = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    const handleSelect = (e) => {
-      e.preventDefault();
-      return false;
-    };
+  //   const handleSelect = (e) => {
+  //     e.preventDefault();
+  //     return false;
+  //   };
 
-    document.addEventListener('selectstart', handleSelect);
-    document.addEventListener('contextmenu', handleRightClick);
+  //   document.addEventListener('selectstart', handleSelect);
+  //   document.addEventListener('contextmenu', handleRightClick);
 
-    return () => {
-      document.removeEventListener('contextmenu', handleRightClick);
-      document.removeEventListener('selectstart', handleSelect);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleRightClick);
+  //     document.removeEventListener('selectstart', handleSelect);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -73,6 +74,11 @@ function App() {
             exact
             element={
               <SiteVisit title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+          <Route
+            path="/disclaimer"
+            exact
+            element={
+              <Disclaimer title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
