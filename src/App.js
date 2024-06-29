@@ -49,7 +49,7 @@ function App() {
             path="/gallery"
             exact
             element={
-              <Gallery title={"Gallery | Sample Flat - Fairfox EON "}
+              <Gallery title={"Office Spaces, Retail Shop Sector 140 Noida - Fairfox EON"}
                 descriptions={"Fairfox EON Gallery – You can have some glimpse of office or retail shops in master plan. This will give you an idea how your commercial IT/ ITES space would be look like. "} />} />
           <Route
             path="/price-list"
