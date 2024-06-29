@@ -43,42 +43,50 @@ function App() {
             path="/"
             exact
             element={
-              <Home title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <Home title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"}
+                descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
           <Route
             path="/gallery"
             exact
             element={
-              <Gallery title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <Gallery title={"Gallery | Sample Flat - Fairfox EON "}
+                descriptions={"Fairfox EON Gallery – You can have some glimpse of office or retail shops in master plan. This will give you an idea how your commercial IT/ ITES space would be look like. "} />} />
           <Route
             path="/price-list"
             exact
             element={
-              <PriceList title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <PriceList title={"Price List, Payment Plan - Fairfox EON "}
+                descriptions={"Fairfox EON price list and payment plan is available here, you can check Basic Sale Price, Preferred Location Charges (PLC) and Other Charges. You can also check the two types of payment plans in Fairfox EON."} />} />
           <Route
             path="/master-plan"
             exact
             element={
-              <MasterPlan title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <MasterPlan title={"Master Plan – Fairfox EON "}
+                descriptions={"Fairfox EON Master plan is available here, view Office Space and Retail Shop, Office Suites and Food Court in all four Tower A, E, D, and B. "} />} />
           <Route
             path="/floor-plan"
             exact
             element={
-              <FloorPlan title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <FloorPlan title={"Floor Plans - Fairfox EON"}
+                descriptions={"Fairfox EON Floor Plans – View the floor plans options available in all four towers."} />} />
           <Route
             path="/location"
             exact
             element={
-              <Location title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <Location title={"Location Map - Fairfox EON"}
+                descriptions={"Fairfox EON location Map – Project is being developed in Sector 140, Plat A on Expressway. This project have connectivity of two metro stations."} />} />
           <Route
             path="/site-visit"
             exact
             element={
-              <SiteVisit title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <SiteVisit title={"Site Visit - Fairfox EON "}
+                descriptions={"For Site Visit in Fairfox EON – simply make a request and book your appointment to view the Sample flat, ready at site."} />} />
           <Route
             path="/disclaimer"
             exact
             element={
-              <Disclaimer title={"FAIRFOX EON Noida | Fairfox Sector 140 Noida | EON Noida"} descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
+              <Disclaimer title={"Disclaimer - FAIRFOX EON"}
+                descriptions={"Welcome to FAIRFOX EON Noida, where every feature is crafted to elevate your lifestyle to new heights. Easy Investing in a retail shop and lockable office space in Noida. Don't miss out on the chance to be a part of Noida's commercial revolution."} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

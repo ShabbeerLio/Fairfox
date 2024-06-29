@@ -1,0 +1,68 @@
+.faqs {
+  padding: 3rem 0rem;
+  width: 100%;
+  /* background-color: #283664; */
+}
+
+.faqs-main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.faqs h3 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}
+
+.accordion-item h2 {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .accordion-button::after{
+  display: none;
+} */
+
+.accordion-item p {
+  text-align: left;
+  font-size: 20px !important;
+  letter-spacing: -0.96px !important;
+  color: black !important;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordionHome .panel {
+  border-bottom: 1px solid black;
+}
+
+.accordion-body {
+  padding: 0px 30px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .faqs-main {
+    max-width: 1140px;
+  }
+}
